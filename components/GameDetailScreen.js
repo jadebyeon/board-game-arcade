@@ -40,8 +40,8 @@ export default function GameDetailScreen({ game, onBack }) {
     <button className="back-button" onClick={onBack}>← BACK</button>
     <p className="screen-kicker">GAME DETAILS</p>
     <h2>{game.name}</h2>
-    <div className="detail-meta"><span>{game.minPlayers}–{game.maxPlayers} PLAYERS</span><span>{game.playtime}</span><span>{game.complexity}</span></div>
-    <p className="detail-description">{game.description}</p>
+    <div className="detail-meta"><span>{game.minPlayers}–{game.maxPlayers} PLAYERS</span><span>{game.playTime || 'PLAYTIME N/A'}</span><span>{game.complexity || 'COMPLEXITY N/A'}</span></div>
+    <p className="detail-description">{game.description || 'No description available.'}</p>
     <div className="tutorial-box"><p className="tutorial-label">TUTORIAL VIDEO</p>
       {tutorial.status === 'loading' && <p>Searching for a tutorial…</p>}
       {tutorial.status === 'found' && <><div className="video-frame"><iframe src={`https://www.youtube.com/embed/${tutorial.video.id}`} title={`${game.name} tutorial`} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen /></div><p className="video-credit">{tutorial.video.title}</p></>}
