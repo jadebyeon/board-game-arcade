@@ -74,4 +74,4 @@ The experience prioritizes a tablet/desktop arcade presentation while remaining 
 
 ## AI Assistance
 
-AI tools supported scaffolding, component implementation, debugging, responsive refinement, API integration, and dataset normalization. The product direction, visual concept, scope, and final decisions were made by the student.
+AI tools supported coding, debugging, responsive refinement, API integration, and dataset normalization. The product direction, visual concept, scope, and final decisions were made by the student.
